@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISRAEL WA NZAMBI | Développeur Full Stack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loader -->
+    <div class="loader">
+        <div class="loader-text">INITIALISATION_</div>
+        <div class="loader-bar">
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Particles Canvas -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">DEV.PORT</div>
+        <div class="nav-right">
+            <div class="nav-links" id="desktop-nav">
+                <a href="#about">À propos</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projets</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Changer de thème">
+                <span class="theme-icon"><i class="fas fa-sun"></i></span>
+            </button>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#about">À propos</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content" id="hero-content">
+            <div class="hero-badge">Développeur Full Stack</div>
+            <h1 class="hero-title">ISRAEL WA NZAMBI<br>NKUNA</h1>
+            <p class="hero-subtitle">Je transforme vos idées en expériences <span>innovantes</span> numériques</p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn btn-ghost">Me contacter</a>
+            </div>
+        </div>
+
+        <div class="code-snippet" data-depth="0.2">const <span class="keyword">dev</span> = () => ∞</div>
+        <div class="code-snippet" data-depth="0.4">git <span class="keyword">push</span> origin main</div>
+        <div class="code-snippet" data-depth="0.3">{ <span class="property">passion</span>: <span class="string">true</span> }</div>
+        <div class="code-snippet" data-depth="0.5"><span class="keyword">await</span> createFuture()</div>
+        <div class="code-snippet" data-depth="0.6">npm <span class="keyword">install</span> innovation</div>
+        <div class="code-snippet" data-depth="0.35">console.<span class="keyword">log</span>(<span class="string">'Hello World'</span>)</div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">SCROLL</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content reveal">
+            <div class="section-label">À propos</div>
+            <h2 class="about-title">Créer.<br><span class="outline">Innover.</span><br>Transformer.</h2>
+            <p class="about-text">
+                Passionné par le développement depuis plus de 2 ans, je spécialise dans la création d'expériences web immersives et performantes. 
+                Mon expertise couvre l'ensemble du cycle de développement, du design à la mise en production.
+            </p>
+            <p class="about-text">
+                Basé à Ouagadougou, Burkina Faso, je collabore avec des startups et entreprises pour transformer leurs visions en réalité numérique. 
+                Chaque projet est une opportunité de repousser les limites du possible.
+            </p>
+        </div>
+        <div class="stats-section reveal reveal-delay-2">
+            <div class="stats-card">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="6">0</div>
+                        <div class="stat-label">PROJETS</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="2">0</div>
+                        <div class="stat-label">ANNÉES XP</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10">0</div>
+                        <div class="stat-label">CLIENTS</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="100">0</div>
+                        <div class="stat-label">% PASSION</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+        <div class="section-header reveal">
+            <div class="section-label">Compétences</div>
+            <h2>Technologies & <span class="outline">Expertise</span></h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-card reveal reveal-delay-1">
+                <div class="skill-icon"><i class="fab fa-react"></i></div>
+                <div class="skill-name">React / Next.js</div>
+                <div class="skill-desc">Applications performantes avec React, Next.js et TypeScript. SSR, SSG, et architectures modernes.</div>
+                <div class="skill-bar"><div class="skill-progress" style="--w: 0.9"></div></div>
+            </div>
+            <div class="skill-card reveal reveal-delay-2">
+                <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                <div class="skill-name">Node.js / APIs</div>
+                <div class="skill-desc">APIs REST et GraphQL robustes avec Node.js, Express et NestJS.</div>
+                <div class="skill-bar"><div class="skill-progress" style="--w: 0.85"></div></div>
+            </div>
+            <div class="skill-card reveal reveal-delay-3">
+                <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                <div class="skill-name">CSS / Animation</div>
+                <div class="skill-desc">Animations fluides, designs responsives et expériences utilisateur mémorables.</div>
+                <div class="skill-bar"><div class="skill-progress" style="--w: 0.88"></div></div>
+            </div>
+            <div class="skill-card reveal reveal-delay-4">
+                <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+                <div class="skill-name">DevOps / Cloud</div>
+                <div class="skill-desc">Déploiement AWS, GCP, Docker, CI/CD et infrastructure moderne.</div>
+                <div class="skill-bar"><div class="skill-progress" style="--w: 0.75"></div></div>
+            </div>
+            <div class="skill-card reveal reveal-delay-5">
+                <div class="skill-icon"><i class="fas fa-database"></i></div>
+                <div class="skill-name">Base de données</div>
+                <div class="skill-desc">PostgreSQL, MongoDB, Redis. Modélisation et optimisation.</div>
+                <div class="skill-bar"><div class="skill-progress" style="--w: 0.8"></div></div>
+            </div>
+            <div class="skill-card reveal reveal-delay-6">
+                <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                <div class="skill-name">IA / Machine Learning</div>
+                <div class="skill-desc">Intégration d'IA, APIs OpenAI, Python et modèles ML.</div>
+                <div class="skill-bar"><div class="skill-progress" style="--w: 0.7"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section" id="projects">
+        <div class="section-header reveal">
+            <div class="section-label">Projets</div>
+            <h2>Réalisations <span class="outline">Destacées</span></h2>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card featured reveal">
+                <div class="project-image"><i class="project-icon fas fa-rocket"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag violet">TypeScript</span>
+                        <span class="tag amber">3D</span>
+                    </div>
+                    <h3 class="project-title">Plateforme Immersive E-Commerce</h3>
+                    <p class="project-desc">Solution e-commerce avec expériences 3D interactives, paiement sécurisé et analytics temps réel.</p>
+                    <a href="#" class="project-link">Voir le projet →</a>
+                </div>
+            </div>
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-image"><i class="project-icon fas fa-chart-line"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag violet">Node.js</span>
+                    </div>
+                    <h3 class="project-title">Dashboard Analytics</h3>
+                    <p class="project-desc">Interface de visualisation de données avec graphiques interactifs.</p>
+                    <a href="#" class="project-link">Voir le projet →</a>
+                </div>
+            </div>
+            <div class="project-card reveal reveal-delay-2">
+                <div class="project-image"><i class="project-icon fas fa-gamepad"></i></div>
+                <div class="project-content">
+                    <div class="project-tags">
+                        <span class="tag">WebGL</span>
+                        <span class="tag amber">Three.js</span>
+                    </div>
+                    <h3 class="project-title">Expérience Jeu WebGL</h3>
+                    <p class="project-desc">Jeu 3D immersif directement dans le navigateur.</p>
+                    <a href="#" class="project-link">Voir le projet →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section avec EmailJS -->
+    <section class="contact" id="contact">
+        <div class="reveal">
+            <div class="section-label">Contact</div>
+            <h2 class="contact-title">Prêt à créer<br><span class="outline">ensemble</span> ?</h2>
+            <p class="contact-text">Discutons de votre projet et transformons vos idées en réalité digitale.</p>
+            <a href="mailto:israelnkuna810@gmail.com" class="contact-email">israelnkuna810@gmail.com</a>
+
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="from_name" placeholder="Votre nom" required class="form-input">
+                <input type="email" id="email" name="from_email" placeholder="Votre email" required class="form-input">
+                <textarea id="message" name="message" placeholder="Votre message" required class="form-textarea"></textarea>
+                <button type="submit" id="submit-btn" class="btn btn-primary">Envoyer le message</button>
+            </form>
+
+            <div id="form-success" class="form-success hidden">
+                ✅ Message envoyé avec succès ! Je vous répondrai rapidement.
+            </div>
+            <div id="form-error" class="form-error hidden">
+                ❌ Une erreur est survenue. Veuillez réessayer.
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/Kodek-10" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/isra%C3%ABl-nkuna-b963b137a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>© 2026 Israel Wa Nzambi. Tous droits réservés.</div>
+        <div>Développé avec passion</div>
+        <div>Ouagadougou, Burkina Faso</div>
+    </footer>
+
+
+    <!-- Assistant IA Flottant -->
+<div class="ai-assistant">
+    <button class="ai-toggle" id="ai-toggle" aria-label="Ouvrir l'assistant IA">
+        <i class="fas fa-robot"></i>
+    </button>
+    
+    <div class="ai-chat-window hidden" id="ai-chat-window">
+        <div class="ai-chat-header">
+            <div class="ai-header-info">
+                <i class="fas fa-robot"></i>
+                <div>
+                    <strong>Isodi AI Assistant</strong><br>
+                    <span>Je peux t'aider à mieux connaître Israel</span>
+                </div>
+            </div>
+            <button class="ai-close" id="ai-close">X</button>
+        </div>
+        
+        <div class="ai-chat-messages" id="ai-messages">
+            <!-- Messages apparaîtront ici -->
+        </div>
+        
+        <div class="ai-chat-input">
+            <input type="text" id="ai-input" placeholder="Ex: Parle-moi de ses projets ou de ses compétences..." autocomplete="off">
+            <button id="ai-send">Envoyer</button>
+        </div>
+    </div>
+</div>
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
